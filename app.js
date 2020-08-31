@@ -6,7 +6,7 @@ dotenv.config();
 
 (async () => {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.USERBD}:${process.env.PWBD}@clusterbootcamp.bbalc.mongodb.net/grades?retryWrites=true&w=majority`, {
+        await mongoose.connect(`mongodb+srv://${process.env.USERDB}:${process.env.PWDB}@clusterbootcamp.bbalc.mongodb.net/grades?retryWrites=true&w=majority`, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
